@@ -13,3 +13,17 @@ RUN apt-get update && apt-get install -y postgresql-client --no-install-recommen
 ENV RAILS_VERSION 4.2.3
 
 RUN gem install rails --version "$RAILS_VERSION"
+
+RUN gem install byebug
+RUN gem install database_cleaner
+RUN gem install sqlite3
+RUN gem install codeclimate-test-reporter
+RUN gem install capybara
+RUN gem install poltergeist
+RUN gem install fuubar
+RUN gem install rspec-rails
+RUN gem install shoulda-matchers
+RUN gem install guard-rspec
+RUN gem install factory_girl_rails
+RUN gem install ffaker
+

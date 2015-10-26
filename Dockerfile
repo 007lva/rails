@@ -25,5 +25,10 @@ RUN gem install rspec-rails
 RUN gem install shoulda-matchers
 RUN gem install guard-rspec
 RUN gem install factory_girl_rails
-RUN gem install ffaker
+
+# pronto integration
+RUN apt-get install cmake
+RUN gem install pronto
+RUN gem install pronto-rubocop
+RUN gem install pronto-scss
 

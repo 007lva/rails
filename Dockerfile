@@ -27,7 +27,8 @@ RUN gem install guard-rspec
 RUN gem install factory_girl_rails
 
 # pronto integration
-RUN apt-get install cmake
+RUN apt-get update
+RUN apt-get install -y cmake
 RUN gem install pronto
 RUN gem install pronto-rubocop
 RUN gem install pronto-scss
